@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  phpenv:
+    image: andylee/phpenv:latest
+    environment:
+        DOMAIN: xxx.xxx.com
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
