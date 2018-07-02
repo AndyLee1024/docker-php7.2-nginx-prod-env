@@ -14,15 +14,15 @@ ENV SITEROOT  \/var\/www\/html
 # 对外访问目录
 ENV WEBROOT \/var\/www\/html\/public
 # GIT账号
-ENV GIT_EMAIL andylee@tiidian.com
+ENV GIT_EMAIL your@example.com
 # GIT name
 ENV GIT_NAME andylee
 # GIT_REPO 目前仅支持http
-ENV GIT_REPO git.tedia.cn/andylee/order-apis.git
+ENV GIT_REPO github.com/z-song/laravel-admin.git
 # GIT 分支
 ENV GIT_BRANCH master
 # GIT TOKEN
-ENV GIT_TOKEN qtry_1--t3o5-eEkeoe6
+ENV GIT_TOKEN qtry_1--000-eEkeoe6
 RUN apt update && apt-get install -y wget unzip curl make gcc autoconf vim apt-transport-https lsb-release ca-certificates python python-dev python-pip
 RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 RUN echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list
